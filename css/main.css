@@ -1,0 +1,32 @@
+.wrapper{
+    width:100%;
+    min-width:350px;
+}
+header{
+height:80px;
+border-bottom:1px solid #555;
+}
+
+main{
+    padding:0 1rem;
+}
+
+main > div{
+    min-height:650px;
+    padding: 1rem;
+}
+
+main .left{
+    width: 25%;
+    border-right:1px solid #555;
+}
+
+main .right{
+    width:75%;
+}
+
+footer{
+    height:100px;
+    border-top:1px solid #555;
+    text-align: center;
+}

@@ -12,6 +12,7 @@ html,
 body {
     font-family: 'Noto Sans KR', 'notokr', 'Nanum Gothic', 'sans-serif';
     color: #333;
+    font-size:14px;
 }
 
 a {
