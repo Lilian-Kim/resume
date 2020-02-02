@@ -83,6 +83,17 @@ main .left .personal-info li span a:hover{
     opacity: 0.8;
 }
 
+main .left .skill-wrap{
+    margin-top: 1rem;
+}
+main .left .skill-wrap ul{
+    padding-left:1.5rem;
+}
+
+main .left .skill-wrap ul li{
+    list-style-type: disc;
+}
+
 
 main .right{
     width:77%;
