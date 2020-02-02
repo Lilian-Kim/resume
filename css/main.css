@@ -2,11 +2,22 @@
     width:100%;
     min-width:350px;
 }
+
+/* header 시작 */
 header{
 height:80px;
 border-bottom:1px solid #555;
+padding-left:1rem;
+position: relative;
 }
 
+header h1{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* main 시작 */
 main{
     padding:0 1rem;
 }
@@ -17,14 +28,67 @@ main > div{
 }
 
 main .left{
-    width: 25%;
+    width: 23%;
     border-right:1px solid #555;
+    /* padding-right: 2rem; */
 }
+
+main .left .resume-img{
+    /* background-image: url('');
+    background-size: contain;
+    background-position: center; */
+    width:130px;
+    height:165px;
+    border:1px solid red;
+    margin:0 auto;
+}
+
+main .left .personal-info{
+    margin-top: 1rem;
+}
+
+main .left .personal-info li span{
+    display: inline-block;
+}
+
+main .left .personal-info li span:first-child{
+width:20px;
+height:20px;
+vertical-align: bottom;
+}
+
+main .left .personal-info li:first-child span:first-child{
+    background-image: url('../img/icons8-name-48.png');
+    background-size: contain;
+    background-position: center;
+}
+
+
+main .left .personal-info li:nth-child(2) span:first-child{
+    background-image: url('../img/icons8-new-post-48.png');
+    background-size: contain;
+    background-position: center;
+}    
+
+
+main .left .personal-info li:last-child span:first-child{
+    background-image: url('../img/icons8-github-48.png');
+    background-size: contain;
+    background-position: center;
+}    
+
+
+main .left .personal-info li span a:hover{
+    font-weight: bold;
+    opacity: 0.8;
+}
+
 
 main .right{
-    width:75%;
+    width:77%;
 }
 
+/* footer 시작 */
 footer{
     height:100px;
     border-top:1px solid #555;
