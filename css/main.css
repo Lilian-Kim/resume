@@ -34,13 +34,15 @@ main .left{
 }
 
 main .left .resume-img{
-    /* background-image: url('');
-    background-size: contain;
-    background-position: center; */
+    background-image: url('../img/resume_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width:130px;
     height:165px;
-    border:1px solid red;
     margin:0 auto;
+    text-indent: -9999;
+    font-size: 0px;
 }
 
 main .left .personal-info{
@@ -55,26 +57,23 @@ main .left .personal-info li span:first-child{
 width:20px;
 height:20px;
 vertical-align: bottom;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 main .left .personal-info li:first-child span:first-child{
     background-image: url('../img/icons8-name-48.png');
-    background-size: contain;
-    background-position: center;
 }
 
 
 main .left .personal-info li:nth-child(2) span:first-child{
     background-image: url('../img/icons8-new-post-48.png');
-    background-size: contain;
-    background-position: center;
 }    
 
 
 main .left .personal-info li:last-child span:first-child{
     background-image: url('../img/icons8-github-48.png');
-    background-size: contain;
-    background-position: center;
 }    
 
 
