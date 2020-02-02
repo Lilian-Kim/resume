@@ -43,6 +43,8 @@ main .left .resume-img{
     margin:0 auto;
     text-indent: -9999;
     font-size: 0px;
+    border-radius: 50%;
+    margin-top: 1rem;
 }
 
 main .left .personal-info{
@@ -51,6 +53,10 @@ main .left .personal-info{
 
 main .left .personal-info li span{
     display: inline-block;
+}
+
+main .left .personal-info li span + span{
+    margin-left:5px;
 }
 
 main .left .personal-info li span:first-child{
@@ -96,6 +102,11 @@ main .left .skill-wrap ul li{
 
 main .right{
     width:77%;
+}
+
+
+main .right h3{
+    border-bottom: 1px solid red;
 }
 
 /* footer 시작 */
