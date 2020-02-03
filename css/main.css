@@ -1,6 +1,5 @@
 .wrapper{
     width:100%;
-    min-width:350px;
 }
 
 /* header 시작 */
@@ -19,6 +18,7 @@ header h1{
 
 /* main 시작 */
 main{
+    margin:0 auto;
     padding:0 1rem;
 }
 
@@ -116,10 +116,78 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width:1180px) {
+   .left, .right{
+        width: 100% !important;
+        float:none;
+        border:none;
+    }
+    .left{
+        border-right:none !important;
+        border-bottom:1px solid #555;
+        min-height: inherit;
+    }
+
+    .left::after{
+        display: block;
+        content:'';
+        clear:both;
+    }
+
+    .left .resume-img{
+        margin-right:20px !important;
+    }
+
+    .left .resume-img, 
+    .left .personal-info, 
+    .left .skill-wrap{
+        float:left;
+    }
+
+    .left .personal-info{
+        margin-right: 20px;
+        /* width: calc((100% - 150px) - 20%); */
+    }
+   
+    .left .skill-wrap{
+        /* width: calc((100% - 150px) - 40%); */
+    }
+
+
+
+}
+
 
 @media screen and (max-width:639px) {
     div.left, div.right{
         width: 100%;
         float:none;
+        border:none;
+        padding-left:0;
+        padding-right:0;
+    }
+    .left .resume-img {
+        float:none;
+        margin:0 auto !important;
+    }
+
+    .info-wrapper{
+        width:400px;
+        margin:0 auto;
+    }
+
+    .left .personal-info, 
+    .left .skill-wrap{
+        float:left !important;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .left .personal-info, 
+    .left .skill-wrap{
+        float:none !important;
+        width:250px;
+        margin:0 auto;
     }
 }
