@@ -5,12 +5,14 @@
 /* header 시작 */
 header{
 height:80px;
-border-bottom:1px solid #555;
+border-bottom:1px solid #adb5bd;
 padding-left:1rem;
 position: relative;
+background-color:#f1f3f5;
 }
 
 header h1{
+    color:#495057;
     position: absolute;
     top:50%;
     transform:translateY(-50%);
@@ -33,7 +35,7 @@ main > div{
 
 main .left{
     width: 23%;
-    border-right:1px solid #555;
+    border-right:1px solid #adb5bd;
     /* padding-right: 2rem; */
 }
 
@@ -116,8 +118,9 @@ main .right h3{
 /* footer 시작 */
 footer{
     height:100px;
-    border-top:1px solid #555;
+    border-top:1px solid #adb5bd;
     text-align: center;
+    background-color: #f1f3f5;
 }
 
 @media screen and (max-width:1180px) {
@@ -187,11 +190,19 @@ footer{
 }
 
 @media screen and (max-width:414px) {
-
+    .info-wrapper{
+        width:100%;
+        /* margin:0 auto; */
+    }
     .left .personal-info, 
     .left .skill-wrap{
         float:none !important;
         width:250px;
         margin:0 auto;
     }
+}
+
+@media screen and (max-width:349px) {
+
+
 }
