@@ -35,7 +35,6 @@ main > div{
 
 main .left{
     width: 23%;
-    border-right:1px solid #adb5bd;
     /* padding-right: 2rem; */
 }
 
@@ -108,11 +107,14 @@ main .left .skill-wrap ul li{
 
 main .right{
     width:77%;
+    border-left:1px solid #adb5bd;
 }
 
 
-main .right h3{
-    border-bottom: 1px solid #adb5bd;
+main .right h2{
+    padding-bottom:0.5rem;
+    border-bottom: 2px solid #adb5bd;
+    margin-bottom:1rem;
 }
 
 /* footer 시작 */
@@ -123,14 +125,23 @@ footer{
     background-color: #f1f3f5;
 }
 
+footer > p{
+    margin-top: 1.5rem;
+}
+
 @media screen and (max-width:1180px) {
+
+    section + section{
+        margin-top: 3rem;
+    }
    .left, .right{
         width: 100% !important;
         float:none;
         border:none;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     .left{
-        border-right:none !important;
         border-bottom:1px solid #555;
         min-height: inherit;
     }
@@ -160,6 +171,9 @@ footer{
         /* width: calc((100% - 150px) - 40%); */
     }
 
+    .right{
+        border-left:none !important;
+    }
 
 
 }
