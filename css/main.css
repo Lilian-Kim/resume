@@ -24,6 +24,13 @@ main{
     padding:0 1rem;
 }
 
+main a:hover,
+main a:active,
+main a:focus{
+    font-weight: bold;
+    opacity: 0.8;
+}
+
 section + section{
     margin-top: 1.5rem;
 }
@@ -87,12 +94,6 @@ main .left .personal-info li:last-child span:first-child{
     background-image: url('../img/icons8-github-48.png');
 }    
 
-
-main .left .personal-info li span a:hover{
-    font-weight: bold;
-    opacity: 0.8;
-}
-
 main .left .skill-wrap{
     margin-top: 1rem;
 }
@@ -109,6 +110,48 @@ main .right{
     width:77%;
     border-left:1px solid #adb5bd;
 }
+
+main .right section:first-child p {
+    padding-left: 1rem;
+}
+
+main .right section>ul{
+    padding-left:1rem;
+}
+
+main .right section:nth-child(2) ul li{
+    display: block;
+}
+
+main .right section>ul>li +li{
+    margin-top:1rem;
+}
+main .right section>ul>li>ul{
+    padding-left:1rem;
+}
+main .right section>ul>li>ul>li::before{
+   content:'-'
+}
+main .right section>ul>li>ul>li + li{
+    margin-top:0.5rem;
+}
+main .right section>ul>li>ul>li>h4{
+    font-weight: normal;
+    display: inline-block;
+ }
+ main .right section>ul>li>ul>li>p{
+ padding-left:0.5rem;
+ }
+
+ main .right section:nth-child(3)>ul>li,
+ main .right section:nth-child(4)>ul>li,
+ main .right section:nth-child(5)>ul>li{
+  margin-left:1rem;
+  list-style-type: disc;
+ }
+
+
+
 
 
 main .right h2{
