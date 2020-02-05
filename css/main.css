@@ -286,6 +286,11 @@ footer button.block{
     .left .skill-wrap {
         float: left !important;
     }
+
+    .right{
+        padding-left:0 !important;
+    }
+
 }
 
 @media screen and (max-width:414px) {
