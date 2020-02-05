@@ -8,7 +8,7 @@ header {
     border-bottom: 1px solid #adb5bd;
     padding-left: 1rem;
     position: relative;
-    background-color: #f1f3f5;
+    background-color: #f8f9fa;
 }
 
 header h1 {
@@ -25,9 +25,13 @@ main {
     word-break: keep-all;
 }
 
+main a{
+    text-decoration: underline !important;
+}
 main a:hover,
 main a:active,
 main a:focus {
+    color:#0b7285;
     font-weight: bold;
     opacity: 0.8;
 }
@@ -162,6 +166,13 @@ main .right h2 {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #adb5bd;
     margin-bottom: 1rem;
+    color: #0b7285;
+ 
+}
+
+main .right h3{
+    color: #495057;
+    margin-bottom: 0.25rem;
 }
 
 /* footer 시작 */
@@ -169,11 +180,27 @@ footer {
     height: 100px;
     border-top: 1px solid #adb5bd;
     text-align: center;
-    background-color: #f1f3f5;
+    background-color: #f8f9fa;
 }
 
 footer>p {
     margin-top: 1.5rem;
+}
+
+footer button.block{
+    display:block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #0b7285;
+    border:1px solid #0b7285;
+    border-radius: 3px;
+    cursor: pointer;
+    position:fixed;
+    bottom: 70px;
+    right: 2.5rem;
+    font-size: 1rem;
+    z-index: 10;
 }
 
 @media screen and (max-width:1180px) {
@@ -273,6 +300,11 @@ footer>p {
         width: 250px;
         margin: 0 auto;
     }
+
+    footer Button.block{
+     right:15px;
+    }
+    
 }
 
 @media screen and (max-width:349px) {}
