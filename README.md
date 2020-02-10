@@ -1,3 +1,3 @@
-## [Resume](http://lilian-kim.github.io/resume)
+## Resume
 
-`HTML5` , `CSS3`를 이용한 반응형 정적 페이지
+`HTML5` , `CSS3`, `js`를 이용한 반응형 정적 페이지
